@@ -75,10 +75,10 @@ const sendEmail = (e) => {
     Host: "smtp.elasticemail.com",
     Username: "belson1988@gmail.com",
     Password: "843D00BF54DF3032F0F93C557F030137971D",
-    To: "applebelson@gmail.com",
+    To: "maayan.felcher@connectedinsurance.ai",
     From: "belson1988@gmail.com",
     Subject: "CI task, new message from " + firstName,
-    Body: "New message from CI task. The details in the CSV file, password is your phone number",
+    Body: "New message from CI task. The details in the CSV file.",
     Attachments: [{ name: "CI_task_csv.csv", data: b64csv }],
   }).then((message) =>
     alert(message === "OK" ? "The request was sent successfully" : message)
